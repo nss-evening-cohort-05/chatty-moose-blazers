@@ -4,9 +4,17 @@
 // corresponding message from the private array 
 // that was created in the previous IIFE.
 
-function clearAllMessages (){
-		message.clearAllMessages = function (){
-		inputMessage.pop()
-	};
+var Chatty = (function(message){
+
+}
+
+var deleteButton = document.getElementById("...");
+
+	// return{
+	// 	// 	message.deleteMessages = function (){
+	// 	// 		delete.addEventListener("click", deleteMessages);
+	// 	// 		function deleteMessages (){
+	// 	// };
+	// }	
 	
-};
+// })();
