@@ -3,7 +3,7 @@ console.log(inText[0].innerHTML);
 var messageBox = document.getElementById("pointsContainer");
 
 
-function exectueThisCodeAfterFileLoaded(){
+function executeThisCodeAfterFileLoaded(){
 	var data = JSON.parse(this.responseText);
 	console.log(data);
 
@@ -11,14 +11,16 @@ function exectueThisCodeAfterFileLoaded(){
 		Chatty.addItem(data.default[i].message);
 		console.log(data.default[i].message);
 	}
+
+	function makeDom();
 }
 
-function exectueThisCodeAfterFileFails() {
+function executeThisCodeAfterFileFails() {
 console.log("Load Failed.  Ready Player Two.")
 }
 
 var myRequest = new XMLHttpRequest();
-myRequest.addEventListener("load", exectueThisCodeAfterFileLoaded);
-myRequest.addEventListener("error", exectueThisCodeAfterFileFails);
+myRequest.addEventListener("load", executeThisCodeAfterFileLoaded);
+myRequest.addEventListener("error", executeThisCodeAfterFileFails);
 myRequest.open("GET", "../default.json");
 myRequest.send();
