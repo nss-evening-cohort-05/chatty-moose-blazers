@@ -24,6 +24,7 @@ We have used JavaScript IIFEs and Bootsstrap to display the message board.
 
 # Contributors 
 ###Listed in order of team lead then alphabetical order
+
 [Bao Nguyen](https://github.com/baonguyen79)  
 [Meghan Debity](https://github.com/Megraohoh)  
 [Thomas Fitzgerald](https://github.com/basictom)  
