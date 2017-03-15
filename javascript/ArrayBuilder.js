@@ -6,8 +6,9 @@ var Chatty = (function (myChatty) {
  
     // Add items to  MessageArray
     myChatty.addItem = function( values ) {
-      values.id = ++id;
+      // values.id = ++id;
       MessageArray.push(values);
+      console.log("What's in MessageArray", MessageArray);
     };
  
     // Get the count of items in Array
