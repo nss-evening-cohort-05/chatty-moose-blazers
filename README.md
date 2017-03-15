@@ -1,5 +1,4 @@
 # Chatty Group Project
-# Chatty Group Project
 
 ### An NSS group message board project
 
