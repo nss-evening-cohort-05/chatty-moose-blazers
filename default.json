@@ -1,0 +1,24 @@
+{
+  "default": [
+    {
+      "id":"1",
+      "message":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a fringilla elit. Integer iaculis consequat lacus, nec maximus felis interdum sed. Cras a molestie lacus."
+    },
+    {
+      "id":"2",
+      "message":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a fringilla elit. Integer iaculis consequat lacus, nec maximus felis interdum sed. Cras a molestie lacus."
+    },
+    {
+      "id":"3",
+      "message":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a fringilla elit. Integer iaculis consequat lacus, nec maximus felis interdum sed. Cras a molestie lacus."
+    },
+    {
+      "id":"4",
+      "message":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a fringilla elit. Integer iaculis consequat lacus, nec maximus felis interdum sed. Cras a molestie lacus."
+    },
+    {
+      "id":"5",
+      "message":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a fringilla elit. Integer iaculis consequat lacus, nec maximus felis interdum sed. Cras a molestie lacus."
+    }
+  ]
+}
