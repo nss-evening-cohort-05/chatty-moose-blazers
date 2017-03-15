@@ -5,5 +5,8 @@
 // that was created in the previous IIFE.
 
 function clearAllMessages (){
+		message.clearAllMessages = function (){
+		inputMessage.pop()
+	};
 	
 };
