@@ -23,7 +23,9 @@ We have used JavaScript IIFEs and Bootsstrap to display the message board.
    Clone down from GitHub and run on `http-server`
 
 # Contributors 
-###Listed in order of team lead then alphabetical order
+
+### Listed in order of team lead then alphabetical order
+
 
 [Bao Nguyen](https://github.com/baonguyen79)  
 [Meghan Debity](https://github.com/Megraohoh)  

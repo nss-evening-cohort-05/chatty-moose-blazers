@@ -6,8 +6,8 @@ var Chatty = (function (myChatty) {
  
     // Add items to  MessageArray
     myChatty.addItem = function( values ) {
-      values.id = ++id;
       MessageArray.push(values);
+      console.log("What's in MessageArray", MessageArray);
     };
  
     // Get the count of items in Array
@@ -21,6 +21,10 @@ var Chatty = (function (myChatty) {
         return MessageArray;
     };
 
+    // Delete 1 element at posion index id
+    myChatty.deleteItem = function(id) {
+        MessageArray.splice(id, 1);         
+    }
   
   return myChatty;
 
