@@ -1,18 +1,17 @@
-var inText = document.getElementsByClassName("form-control");
-console.log(inText[0].innerHTML);
-var messageBox = document.getElementById("pointsContainer");
+var darkTheme = document.getElementById("dark-theme");
+var largeText = document.getElementById("large-text");
 
 
 function executeThisCodeAfterFileLoaded(){
 	var data = JSON.parse(this.responseText);
 	console.log(data);
 
-	for (var i = 0; i < data.default.length; i++) {
-		Chatty.addItem(data.default[i].message);
-		console.log(data.default[i].message);
-	}
+	// for (var i = 0; i < data.default.length; i++) {
+	// 	Chatty.addItem(data.default[i].message);
+	// 	// console.log(data.default[i].message);
+	// }
 
-	function makeDom();
+	// makeDom();
 }
 
 function executeThisCodeAfterFileFails() {
@@ -24,3 +23,26 @@ myRequest.addEventListener("load", executeThisCodeAfterFileLoaded);
 myRequest.addEventListener("error", executeThisCodeAfterFileFails);
 myRequest.open("GET", "../default.json");
 myRequest.send();
+
+darkTheme.addEventListener("change", function(event) {
+	if (event.target.checked === true) {
+		document.body.classList.add("dark");
+	} else {
+		console.log(event);
+		document.body.classList.remove("dark");
+	}
+});
+
+largeText.addEventListener("change", function(event) {
+	if (event.target.checked === true) {
+		document.body.classList.add("large");
+		console.log(event);
+	} else {
+		document.body.classList.remove("large");
+		console.log(document.body.className);
+	}
+});
+
+
+
+
