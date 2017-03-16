@@ -7,11 +7,10 @@ var messageDiv = document.getElementById("user-message");
 //grabs object message from private array by ID and adds delete button/HTML
 function makeDom(){
 	var messageString = "";
-	//object element ID + user message
-	// + delete button
+	messageString += messageArray;
+	messageString += `<button id="deleteButton" type="button" class="btn btn-default">Delete</button>`;
 	messageDiv.innerHTML += messageString;
 };
-
 
 
 clearBoardBtn.addEventListener("click", clearBoard() {
@@ -22,3 +21,29 @@ clearBoardBtn.addEventListener("click", clearBoard() {
 
 //listens for the enter key to add new message in DOM
 inputNewMessage.addEventListener("keyup", makeDom);
+
+//////////// code from instructions for adding attributes and dynamic event listeners
+// // This will disable the first button with a class of "button-message"
+// document.getElementsByClassName("clear-messages")[0].setAttribute("disabled", true);
+
+
+// document.querySelector("body").addEventListener("click", function(event) {
+//   console.log(event);
+
+//   // Handle the click event on any li
+//   if (event.target.tagName.toLowerCase() === "li") {
+//     console.log("You clicked on an <li> element");
+//   }
+
+//   // Handle the click event on any DOM element with a certain class
+//   if (event.target.className === "article-section") {
+//     console.log("You clicked on an `article-section` element");
+//   }
+
+//   // Inspect the `id` property of the event target
+//   if (event.target.id === "page-title") {
+//     console.log("You clicked on the page-title element");
+//   }
+// });
+
+
