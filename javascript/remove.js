@@ -14,4 +14,6 @@ var Chatty = (function(myChatty){
 		}	
 	}
 		
+
 })(Chatty || {});
+

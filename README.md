@@ -23,10 +23,12 @@ We have used JavaScript IIFEs and Bootsstrap to display the message board.
    Clone down from GitHub and run on `http-server`
 
 # Contributors 
+
 ### Listed in order of team lead then alphabetical order
+
 
 [Bao Nguyen](https://github.com/baonguyen79)  
 [Meghan Debity](https://github.com/Megraohoh)  
 [Thomas Fitzgerald](https://github.com/basictom)  
 [Dwayne Pate](https://github.com/drworm75)  
-[Heather Thacker](https://github.com/hhthacker) 
+[Heather Thacker](https://github.com/hhthacker)  
