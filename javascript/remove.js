@@ -6,14 +6,7 @@
 
 var Chatty = (function(myChatty){
 
-	var deleteButton = document.getElementById("deleteButton");
 	var clearBoard = document.getElementById("clearBoard");
-
-	myChatty.removeItem = function (removeOneMsg){
-		if(event.target.deleteButton){
-			event.target.parentElement.remove();	
-		}	
-	}
 
 	myChatty.removeAll= function (removeBoard){
 		if(event.target.clearBoard){
@@ -23,6 +16,16 @@ var Chatty = (function(myChatty){
 	return myChatty;	
 
 })(Chatty || {});
+
+
+	// var deleteButton = document.getElementById("deleteButton");
+
+	// myChatty.removeItem = function (removeOneMsg){
+	// 	if(event.target.deleteButton){
+	// 		event.target.parentElement.remove();	
+	// 		// event.target.parentElement.splice(); this instead?	
+	// 	}	
+	// }
 
 
 
