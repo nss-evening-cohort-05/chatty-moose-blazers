@@ -1,6 +1,3 @@
-var darkTheme = document.getElementById("dark-theme");
-var largeText = document.getElementById("large-text");
-
 
 function executeThisCodeAfterFileLoaded(){
 	var data = JSON.parse(this.responseText);
@@ -24,24 +21,6 @@ myRequest.addEventListener("error", executeThisCodeAfterFileFails);
 myRequest.open("GET", "../default.json");
 myRequest.send();
 
-darkTheme.addEventListener("change", function(event) {
-	if (event.target.checked === true) {
-		document.body.classList.add("dark");
-	} else {
-		console.log(event);
-		document.body.classList.remove("dark");
-	}
-});
-
-largeText.addEventListener("change", function(event) {
-	if (event.target.checked === true) {
-		document.body.classList.add("large");
-		console.log(event);
-	} else {
-		document.body.classList.remove("large");
-		console.log(document.body.className);
-	}
-});
 
 
 
