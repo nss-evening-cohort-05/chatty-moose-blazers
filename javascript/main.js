@@ -5,8 +5,8 @@ function executeThisCodeAfterFileLoaded(){
 
 	for (var i = 0; i < data.default.length; i++) {
 		Chatty.addItem(data.default[i].message);
-		console.log(data.default[i].message);
 	}
+	makeDom();
 
 	// makeDom();
 }
