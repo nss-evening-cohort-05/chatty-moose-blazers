@@ -20,17 +20,17 @@ function makeDom(){
 // );
 
  function enterKeyPressed (keyPress) {
-      if (keyPress.which === 13) {
-inputNewMessage.value
+      if (keyPress.keyCode == 13) {
+      Chatty.addItem(inputNewMessage.value);
       makeDom();
     }
   };
 
-      console.log("hello", inputNewMessage.value);
+
 
 
 //listens for the enter key to add new message in DOM
-document.body.addEventListener("keyup", enterKeyPressed);
+inputNewMessage.addEventListener("keyup", enterKeyPressed);
 
 function deleteThisMessage (event){
 	if(event.target.className === 'btn btn-default'){
