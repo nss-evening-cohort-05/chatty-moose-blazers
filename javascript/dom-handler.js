@@ -35,10 +35,16 @@ inputNewMessage.addEventListener("keyup", enterKeyPressed);
 function deleteThisMessage (event){
 	if(event.target.className === 'btn btn-default'){
 		var id = event.target.id;
-		var buttonNumber = id.split('deleteButton-')[1];
-		console.log("is this working?", buttonNumber);
-		Chatty.deleteItem(buttonNumber);
-		makeDom();
+		if (id == 'clearBoard'){
+			Chatty.removeAll();
+			makeDom();
+			}
+		else {	
+			var buttonNumber = id.split('deleteButton-')[1];
+			console.log("is this working?", buttonNumber);
+			Chatty.deleteItem(buttonNumber);
+			makeDom();
+		}
 
 	};
 };
