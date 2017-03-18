@@ -8,9 +8,9 @@ var Chatty = (function(myChatty){
 
 	var clearBoard = document.getElementById("clearBoard");
 
-	myChatty.removeAll= function (removeBoard){
+	myChatty.removeAll = function (removeBoard){
 		if(event.target.clearBoard){
-			event.target.parentElement.remove();
+			messageArray.length = 0;
 		}
 	}
 	return myChatty;	
