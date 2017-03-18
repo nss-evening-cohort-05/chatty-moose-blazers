@@ -6,12 +6,19 @@
 
 var Chatty = (function(myChatty){
 
-	var deleteButton = document.getElementById("...");
+	var deleteButton = document.getElementById("deleteButton");
+	var clearBoard = document.getElementById("clearBoard");
 
-	myChatty.remove = function removeMsg(){
-		if(event.target.getElementById("[i]")){
+	myChatty.removeItem = function (removeOneMsg){
+		if(event.target.deleteButton){
 			event.target.parentElement.remove();	
 		}	
+	}
+
+	myChatty.removeAll= function (removeBoard){
+		if(event.target.clearBoard){
+			event.target.parentElement.remove();
+		}
 	}
 	return myChatty;	
 
