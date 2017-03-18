@@ -6,10 +6,10 @@ function executeThisCodeAfterFileLoaded(){
 	var data = JSON.parse(this.responseText);
 	console.log(data);
 
-	// for (var i = 0; i < data.default.length; i++) {
-	// 	Chatty.addItem(data.default[i].message);
-	// 	// console.log(data.default[i].message);
-	// }
+	for (var i = 0; i < data.default.length; i++) {
+		Chatty.addItem(data.default[i].message);
+		console.log(data.default[i].message);
+	}
 
 	// makeDom();
 }

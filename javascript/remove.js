@@ -4,7 +4,7 @@
 // corresponding message from the private array 
 // that was created in the previous IIFE.
 
-var Chatty = (function(myChatty){
+var Chatty = (function(){
 
 	var deleteButton = document.getElementById("...");
 
@@ -15,5 +15,5 @@ var Chatty = (function(myChatty){
 	}
 		
 
-})(Chatty || {});
+})();
 
