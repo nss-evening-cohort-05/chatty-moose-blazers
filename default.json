@@ -2,23 +2,23 @@
   "default": [
     {
       "id":"1",
-      "message":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a fringilla elit. Integer iaculis consequat lacus, nec maximus felis interdum sed. Cras a molestie lacus."
+      "message":"this is the first message!"
     },
     {
       "id":"2",
-      "message":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a fringilla elit. Integer iaculis consequat lacus, nec maximus felis interdum sed. Cras a molestie lacus."
+      "message":"here is message two for you."
     },
     {
       "id":"3",
-      "message":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a fringilla elit. Integer iaculis consequat lacus, nec maximus felis interdum sed. Cras a molestie lacus."
+      "message":"three trees for geese!"
     },
     {
       "id":"4",
-      "message":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a fringilla elit. Integer iaculis consequat lacus, nec maximus felis interdum sed. Cras a molestie lacus."
+      "message":"hit the floor, this is message four!"
     },
     {
       "id":"5",
-      "message":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a fringilla elit. Integer iaculis consequat lacus, nec maximus felis interdum sed. Cras a molestie lacus."
+      "message":"high five for the fifth message!"
     }
   ]
 }
