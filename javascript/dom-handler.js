@@ -19,9 +19,18 @@ function makeDom(){
 // 	};
 // );
 
+ function enterKeyPressed (keyPress) {
+      if (keyPress.which === 13) {
+inputNewMessage.value
+      makeDom();
+    }
+  };
+
+      console.log("hello", inputNewMessage.value);
+
+
 //listens for the enter key to add new message in DOM
-inputNewMessage.addEventListener("keyup", makeDom);
-makeDom();
+document.body.addEventListener("keyup", enterKeyPressed);
 
 function deleteThisMessage (event){
 	if(event.target.className === 'btn btn-default'){
@@ -35,9 +44,6 @@ function deleteThisMessage (event){
 };
 
 document.body.addEventListener("click", deleteThisMessage);
-
-
-
 
 
 //dark theme check box
