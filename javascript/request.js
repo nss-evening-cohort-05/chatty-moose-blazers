@@ -8,7 +8,7 @@ function executeThisCodeAfterFileLoaded(){
 		console.log(data.default[i].message);
 	}
 
-	// makeDom();
+	makeDom();
 }
 
 function executeThisCodeAfterFileFails() {
