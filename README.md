@@ -1,4 +1,4 @@
-# Chatty Group Project
+![Title Banner](https://github.com/nss-evening-cohort-05/chatty-moose-blazers/blob/brand-image/images/readme-image.png)
 
 ### An NSS group message board project
 
