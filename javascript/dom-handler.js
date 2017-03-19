@@ -1,9 +1,17 @@
 var inputNewMessage = document.getElementById("messageInput");
 var messageDiv = document.getElementById("user-message");
+var clearBoard = document.getElementById("clearBoard");
 
 //grabs object message from private array by ID and adds delete button/HTML
 function makeDom(){
 	var messageArray = Chatty.getArray();
+	if (messageArray.length === 0) {
+		console.log("length is 0");
+		clearBoard.classList.add("disabled");
+	}
+	else if (messageArray.length > 0) {
+		clearBoard.classList.remove("disabled");
+	}
 	console.log("messageArray", messageArray);
 	messageDiv.innerHTML = "";
 	for (var i = 0; i < messageArray.length; i++) {
@@ -22,6 +30,7 @@ function makeDom(){
  function enterKeyPressed (keyPress) {
       if (keyPress.keyCode == 13) {
       Chatty.addItem(inputNewMessage.value);
+      inputNewMessage.value = "";
       makeDom();
     }
   };
