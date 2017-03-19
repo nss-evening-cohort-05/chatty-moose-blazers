@@ -43,7 +43,7 @@ function deleteThisMessage (event){
 	};
 };
 
-document.body.addEventListener("click", deleteThisMessage);
+document.body.addEventListener("click", Chatty.removeAll);
 
 
 //dark theme check box

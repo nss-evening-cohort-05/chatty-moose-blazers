@@ -24,6 +24,10 @@ var Chatty = (function (myChatty) {
     myChatty.deleteItem = function(id) {
         MessageArray.splice(id, 1);         
     }
+
+    myChatty.clearArray = function() {
+      MessageArray.length = 0;
+    }
   
   return myChatty;
 

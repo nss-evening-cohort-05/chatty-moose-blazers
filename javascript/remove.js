@@ -9,8 +9,11 @@ var Chatty = (function(myChatty){
 	var clearBoard = document.getElementById("clearBoard");
 
 	myChatty.removeAll= function (removeBoard){
+		console.log(event);
+		console.log(Chatty.getItemCount());
 		if(event.target.clearBoard){
-			event.target.parentElement.remove();
+			Chatty.clearArray;
+			makeDom();
 		}
 	}
 	return myChatty;	
