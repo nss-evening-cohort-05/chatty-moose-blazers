@@ -25,6 +25,11 @@ var Chatty = (function (myChatty) {
         MessageArray.splice(id, 1);         
     }
 
+    // set message element to new message
+    myChatty.updateItem = function (id, newMessage) {
+      MessageArray [id] = newMessage;
+    }
+
    
   return myChatty;
 
