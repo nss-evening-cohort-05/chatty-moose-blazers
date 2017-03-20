@@ -6,12 +6,14 @@
 
 var Chatty = (function(myChatty){
 
-	var clearBoard = document.getElementById("clearBoard");
+	// var clearBoard = document.getElementById("clearBoard");
 
-	myChatty.removeAll = function (removeBoard){
-		if(event.target.clearBoard){
-			messageArray.length = 0;
-		}
+	myChatty.removeAll= function (){
+		Chatty.setItemCount(0);
+		// if(event.target.clearBoard){
+		// 	event.target.parentElement.remove();
+		// }
+
 	}
 	return myChatty;	
 

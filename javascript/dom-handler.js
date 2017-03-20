@@ -1,14 +1,23 @@
 var inputNewMessage = document.getElementById("messageInput");
 var messageDiv = document.getElementById("user-message");
+var clearBoard = document.getElementById("clearBoard");
 
 //grabs object message from private array by ID and adds delete button/HTML
 function makeDom(){
 	var messageArray = Chatty.getArray();
+	if (messageArray.length === 0) {
+		console.log("length is 0");
+		clearBoard.classList.add("disabled");
+	}
+	else if (messageArray.length > 0) {
+		clearBoard.classList.remove("disabled");
+	}
 	console.log("messageArray", messageArray);
 	messageDiv.innerHTML = "";
 	for (var i = 0; i < messageArray.length; i++) {
 		var messageString = `<li>`;
 		messageString += messageArray[i];
+		messageString += `<button type="button" class="speak">🔊</button>`;  // add speaker button
 		messageString += `<button id="deleteButton-${[i]}" type="button" class="btn btn-default">Delete</button><br>`;
 		messageDiv.innerHTML += messageString + `</li>`;
 	};
@@ -22,6 +31,7 @@ function makeDom(){
  function enterKeyPressed (keyPress) {
       if (keyPress.keyCode == 13) {
       Chatty.addItem(inputNewMessage.value);
+      inputNewMessage.value = "";
       makeDom();
     }
   };
@@ -35,10 +45,22 @@ inputNewMessage.addEventListener("keyup", enterKeyPressed);
 function deleteThisMessage (event){
 	if(event.target.className === 'btn btn-default'){
 		var id = event.target.id;
-		var buttonNumber = id.split('deleteButton-')[1];
-		console.log("is this working?", buttonNumber);
-		Chatty.deleteItem(buttonNumber);
-		makeDom();
+		if (id == 'clearBoard'){
+			Chatty.removeAll();
+			makeDom();
+			}
+		else {	
+			var buttonNumber = id.split('deleteButton-')[1];
+			console.log("is this working?", buttonNumber);
+			Chatty.deleteItem(buttonNumber);
+			makeDom();
+		}
+	};
+	// speak text event
+	if (event.target.className == "speak"){
+
+		var msg = new SpeechSynthesisUtterance(event.target.previousSibling.textContent);
+		window.speechSynthesis.speak(msg);
 
 	};
 };

@@ -9,9 +9,9 @@ var Chatty = (function (myChatty) {
       MessageArray.push(values);
     };
  
-    // Get the count of items in Array
-    myChatty.getItemCount = function () {
-      return MessageArray.length;
+    // set the count of items in Array
+    myChatty.setItemCount = function (length) {
+      MessageArray.length = length;
     };
 
  
@@ -24,7 +24,13 @@ var Chatty = (function (myChatty) {
     myChatty.deleteItem = function(id) {
         MessageArray.splice(id, 1);         
     }
-  
+
+    // set message element to new message
+    myChatty.updateItem = function (id, newMessage) {
+      MessageArray [id] = newMessage;
+    }
+
+   
   return myChatty;
 
 })(Chatty|| {});
