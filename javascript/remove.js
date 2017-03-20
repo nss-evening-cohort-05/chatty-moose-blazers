@@ -13,6 +13,7 @@ var Chatty = (function(myChatty){
 		// if(event.target.clearBoard){
 		// 	event.target.parentElement.remove();
 		// }
+
 	}
 	return myChatty;	
 
