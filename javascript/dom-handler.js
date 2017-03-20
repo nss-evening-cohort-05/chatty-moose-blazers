@@ -17,6 +17,7 @@ function makeDom(){
 	for (var i = 0; i < messageArray.length; i++) {
 		var messageString = `<li>`;
 		messageString += messageArray[i];
+		messageString += `<button type="button" class="speak">🔊</button>`;  // add speaker button
 		messageString += `<button id="deleteButton-${[i]}" type="button" class="btn btn-default">Delete</button><br>`;
 		messageDiv.innerHTML += messageString + `</li>`;
 	};
@@ -54,6 +55,12 @@ function deleteThisMessage (event){
 			Chatty.deleteItem(buttonNumber);
 			makeDom();
 		}
+	};
+	// speak text event
+	if (event.target.className == "speak"){
+
+		var msg = new SpeechSynthesisUtterance(event.target.previousSibling.textContent);
+		window.speechSynthesis.speak(msg);
 
 	};
 };
